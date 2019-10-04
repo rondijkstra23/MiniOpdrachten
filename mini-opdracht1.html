@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Mini-opdracht nummer 1</title>
+        <script>
+            function geefAlert() {
+               var invoer = document.getElementById("tekstinvoer").value;
+               if(invoer == "hallo") {
+                   alert("Welkom!")
+               }
+               else if (invoer == "doei") {
+                   alert ("Tot de volgende keer!")
+               }
+            }
+        </script>
+    </head>
+    <body>
+        Type hier hallo of doei: <input type="text" id="tekstinvoer">
+        <button onclick="geefAlert()">Hier Klikken!</button>
+    </body>
+</html>

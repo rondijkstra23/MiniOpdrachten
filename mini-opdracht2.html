@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Mini Opdracht twee</title>
+        <script>
+            function zoekEenLetter(){
+                var invoer = document.getElementById("tekst").value;
+                if (invoer.includes("e")) { //if (invoer.indexOf("e") >-1) doet het ook, maar ik weet niet zo goed wat de functie van de ">-1" is.
+                    alert("Je ingevoerde tekst bevat de letter 'e'");
+                }
+               
+            }   
+
+        </script>
+    </head>
+    <body>
+        Type hier wat tekst: <input type="text" id="tekst">
+        <button onclick="zoekEenLetter()">Klik hier!</button> 
+       
+    </body>
+</html>
