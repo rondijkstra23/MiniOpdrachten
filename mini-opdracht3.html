@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Mini-opdracht drie</title>
+        <script>
+            function aantalLetters(){
+             var tekst = document.getElementById("eersteInvoer").value,
+             count = 0;
+
+             for (var i=0; i<tekst.length; i++){
+                 if(tekst.charAt(i) == "e"){
+                     count++
+
+                 }
+             }
+            alert("Het aantal keer dat de letter 'e' voorkomt is: " + count);
+            
+            }
+          
+        </script>
+    </head>
+    <body>
+        Type hier wat tekst: <input type="text" id="eersteInvoer"><br>
+        Type hier nog meer tekst: <input type="text" id="tweedeInvoer"><br><br>
+        <button onclick="aantalLetters()">Klik hier!</button>
+        <div id="result"></div>
+
+    </body>
+</html>
