@@ -18,3 +18,18 @@
        
     </body>
 </html>
+
+var invoer = document.getElementById("eersteInvoer").value;
+var optellen = 0;
+
+for(var i; i < invoer.length; i++)
+{
+    if(invoer.charAt(i) == 'e')
+    {
+        optellen++;
+    }
+}
+document.getElementById("result").innerHTML = optellen;
+
+
+}

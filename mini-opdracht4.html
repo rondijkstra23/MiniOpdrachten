@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Mini opdracht 4</title>
+        <script>
+            
+    
+            function tekstZichtbaarC(){
+                document.getElementById("uitkomstdiv").innerHTML += "<br> U heeft op knop C gedrukt"        
+            
+            }
+
+            function tekstZichtbaarD(){
+               document.getElementById("uitkomstdiv").innerHTML += "<br> U heeft op knop D gedrukt"        
+            }
+
+        </script>
+    </head>
+    <body>
+        <button>A</button>
+        <button>B</button>
+        <button  onclick="tekstZichtbaarC()">C</button>
+        <button onclick="tekstZichtbaarD()">D</button>
+
+        <div id="uitkomstdiv"></div>
+      
+       
+    </body>
+</html>
