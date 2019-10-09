@@ -5,15 +5,29 @@
         </title>
         <script>
            
+           var counter = 0;
 
-            function showPicture() {
-                document.getElementById('zomer').src="winter.jpeg";    
-            }
+        function showPicture(){
+    if(counter == 0){
+        document.getElementById("zomer").src = "zomer.jpeg";
+        counter++;
+    }
+    else if(counter == 1){
+        document.getElementById("zomer").src = "winter.jpeg";
+        counter++;
+    } else if (counter == 2){
+        document.getElementById("zomer").src = "herfst.jpeg";
+        counter++;
+    }else if (counter == 3){
+        document.getElementById("zomer").src = "lente.jpeg";
+        counter = 0;
+    }
+}
         </script>
     </head>
     <body>  
         
-            <img id="zomer" src="zomer.jpeg" height=500px width=500px>
+            <img id="zomer" height=500px width=500px>
             <button onclick="showPicture()">klik</button>
             
     </body>
