@@ -1,0 +1,17 @@
+opdracht 1:
+
+Ik wil een rij (wellicht een Array) met daarin de woorden (rood, geel, groen, blauw, roze) en dan wil ik twee knoppen maken. 
+eentje geeft een kleur aan het woord en als alle woorden een kleur hebben dan krijg je een alert.
+
+ADVANCED:
+
+maak een extra knop die er voor zorgt dat alle kleuren weer verdwijnen.
+
+opdracht 2: 
+
+ik maak een invoerveld en twee knoppen
+de ene knop geeft een alert (je eerste invoer is: ....)
+de andere showt in je webpagina wat je allemaal hebt ingevoerd
+
+
+
