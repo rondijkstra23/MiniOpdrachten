@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            verzonnen opdracht 2
+        </title>
+        <script>
+            var tellen = 1;
+            var ingevoerd = [];
+
+            function voegElementToe(){
+                ingevoerd[tellen] = document.getElementById("tekst").value;
+                alert("Invoer " + tellen + " bestaat uit de waarde: " + ingevoerd[tellen]);
+                tellen++;
+            }
+
+            function laatZienInArray() {
+                var y = "";   
+                for (var x = 1; x < ingevoerd.length; x++){
+                y += "invoer " + x + " = " + ingevoerd[x] + "<br/>"
+                }
+                document.getElementById("resultaat").innerHTML = y;    
+            }
+        
+        </script>
+    </head>
+    <body>
+        Voer hier wat in: <input type="text" id="tekst"/> <br><br>
+        <button onclick="voegElementToe()">Voeg invoer toe</button>
+        <button onclick="laatZienInArray()">Laat invoer zien</button><br><br>
+        <div id="resultaat"></div>
+    </body>
+</html>

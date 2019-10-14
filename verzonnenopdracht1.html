@@ -3,6 +3,31 @@
         <title>
             Mini opdracht 6
         </title>
+        <script>
+           
+            var counter = 0;
+            var kleuren = ["rood", "blauw", "groen", "geel", "roze"]
+            var colors = ["red", "blue", "green", "yellow", "pink"]
+            
+    function veranderKleur(){
+
+        document.getElementById(kleuren[counter]).style.color = colors[counter];
+        counter += 1;
+
+        if (counter == 5){
+            alert("Alle worden hebben een kleur gekregen!")
+        }
+    }
+
+    function haalKleurWeg(){
+        for(var x = 0; x < kleuren.length; x++){
+            document.getElementById(kleuren[x]).style.color = null;
+        }
+        
+
+    }
+
+         </script>
      
     </head>
     <body>  
@@ -13,37 +38,8 @@
         <p id="groen">Groen</p>
         <p id="geel">Geel</p>
         <p id="roze">Roze</p>
-        <button onclick=veranderKleur()>Verander kleur</button>        
+        <button onclick="veranderKleur()">Verander kleur</button>
+        <button onclick="haalKleurWeg()">Haal kleuren weg</button>
+               
     </body>
-    <script>
-           
-        var counter = 0;
-        var kleuren = ["rood", "blauw", "groen", "geel", "roze"]
-     
-
-
-function veranderKleur(){
- if(counter == 0){
-    document.getElementById(kleuren[0]).style.color = "red";
-     counter++;
-    
- }
- else if(counter == 1){
-     document.getElementById(kleuren[1]).style.color = "blue";
-     counter++;
-     
- } else if (counter == 2){
-     document.getElementById(kleuren[2]).style.color = "green";
-     counter++;
-     
- } else if (counter == 3){
-     document.getElementById(kleuren[3]).style.color = "yellow";
-     counter++
-    
- }else if (counter == 4){
-     document.getElementById(kleuren[4]).style.color = "pink";
-     counter++
- }
-}
-     </script>
 </html>
